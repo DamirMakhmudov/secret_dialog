@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-<meta name='viewport' content='width=device-width,initial-scale=1'/>
-<meta content='true' name='HandheldFriendly'/>
-<meta content='width' name='MobileOptimized'/>
-<meta content='yes' name='apple-mobile-web-app-capable'/>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/quasar@2.0.0-beta.9/dist/quasar.prod.css" rel="stylesheet" type="text/css">
+  
+  <title>Secret dialog</title>
 </head>
 <body>
+  <div id="secret-app"></div>
 
-<h2>Setting the Viewport</h2>
-<p>This example does not really do anything, other than showing you how to add the viewport meta element.</p>
-<input type="text" value = "г. Москва, ул. Жопова" style="width: 100%;margin: 10px, 20px, ;">
-<br>
-<br>
+  <script>
+    /* backend functions from spreadsheet*/
+  </script>
 
-<input type="button" value="Покзать" onclick="show()">
-<input type="button" value="Сохранить" onclick="save()">
+  <!-- Import Vue -->
+  <script src="https://unpkg.com/vue@next"></script>
 
+  <!-- Import Quasar -->
+  <script src="https://cdn.jsdelivr.net/npm/quasar@2.0.0-beta.9/dist/quasar.umd.prod.js"></script>
 
+  <!-- Import JS -->
+  <script src="./data.js"></script>
+
+  <!-- Import components -->
+  <script src="./root.js"></script>
+  
+  <!-- Mount app -->
+  <script>const vm = app.mount('#secret-app')</script>
 </body>
 </html>
